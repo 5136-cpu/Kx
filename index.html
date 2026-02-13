@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MR7 Style Landing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow bg-glow--top"></div>
+    <div class="bg-glow bg-glow--bottom"></div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="#">MR7<span>.</span></a>
+        <nav class="main-nav">
+          <a href="#features">Features</a>
+          <a href="#solutions">Solutions</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <button class="btn btn--ghost">Sign in</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <p class="badge">AI Powered Growth Platform</p>
+        <h1>เปลี่ยนธุรกิจของคุณด้วย AI ที่พร้อมใช้งานทันที</h1>
+        <p class="subtitle">
+          หน้าเว็บตัวอย่างสไตล์โมเดิร์นแบบเดียวกับ mr7.ai พร้อมโทนมืด
+          ไฮไลต์นีออน และเลย์เอาต์ที่เน้น Conversion
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn--primary">เริ่มใช้งานฟรี</button>
+          <button class="btn btn--ghost">ดูเดโม</button>
+        </div>
+        <div class="stats-grid">
+          <article>
+            <h3>10k+</h3>
+            <p>ธุรกิจที่ใช้งาน</p>
+          </article>
+          <article>
+            <h3>99.9%</h3>
+            <p>Uptime มั่นใจได้</p>
+          </article>
+          <article>
+            <h3>24/7</h3>
+            <p>ทีมซัพพอร์ต</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="solutions" class="container section model-section">
+        <div class="section-heading">
+          <p>AI Models</p>
+          <h2>พวก AI ที่เขาใช้ พร้อมระดับการเข้าถึงแต่ละรุ่น</h2>
+        </div>
+
+        <div class="workspace-grid">
+          <div class="models-panel" id="modelList">
+            <button class="model-item active" type="button" data-model="KaliGPT v6 Fast" data-locked="false">
+              <span class="model-icon">✦</span>
+              <span>
+                <strong>KaliGPT v6 Fast</strong>
+                <small>Fast pentesting & offensive security queries</small>
+              </span>
+              <span class="status-dot" aria-hidden="true"></span>
+            </button>
+
+            <button class="model-item locked" type="button" data-model="KaliGPT Thinking v7" data-locked="true">
+              <span class="model-icon">⟡</span>
+              <span>
+                <strong>KaliGPT Thinking v7 🔒</strong>
+                <small>Deep reasoning & advanced pentesting analysis</small>
+              </span>
+            </button>
+
+            <button class="model-item locked" type="button" data-model="0Day Coder" data-locked="true">
+              <span class="model-icon">⚙</span>
+              <span>
+                <strong>0Day Coder 🔒</strong>
+                <small>Security coding & vulnerability analysis</small>
+              </span>
+            </button>
+
+            <button class="model-item locked" type="button" data-model="DarkGPT v3" data-locked="true">
+              <span class="model-icon">◌</span>
+              <span>
+                <strong>DarkGPT v3 🔒</strong>
+                <small>Red team tradecraft & evasion</small>
+              </span>
+            </button>
+
+            <button class="model-item locked" type="button" data-model="Onion GPT" data-locked="true">
+              <span class="model-icon">⬡</span>
+              <span>
+                <strong>Onion GPT 🔒</strong>
+                <small>Privacy workflows & anonymity</small>
+              </span>
+            </button>
+          </div>
+
+          <div class="chat-panel">
+            <div class="chat-topbar">
+              <p>Model in use: <span id="activeModel">KaliGPT v6 Fast</span></p>
+              <p id="modelNotice">พร้อมใช้งาน</p>
+            </div>
+            <div class="chat-log" id="chatLog">
+              <div class="bubble bubble--ai">สวัสดีครับ! ลองพิมพ์คำถามด้านความปลอดภัยได้เลย</div>
+            </div>
+            <form id="chatForm" class="chat-form">
+              <input id="chatInput" type="text" placeholder="พิมพ์ข้อความ..." required />
+              <button class="btn btn--primary" type="submit">ส่ง</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="container section">
+        <div class="section-heading">
+          <p>Features</p>
+          <h2>Everything you need in one dashboard</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Smart Automation</h3>
+            <p>ตั้ง Workflow อัตโนมัติ เชื่อม CRM, Ads และ Chat ได้ภายในไม่กี่คลิก</p>
+          </article>
+          <article class="card">
+            <h3>Realtime Analytics</h3>
+            <p>ติดตาม ROI, Funnel และ Conversion แบบทันทีจากข้อมูลจริง</p>
+          </article>
+          <article class="card">
+            <h3>AI Assistant</h3>
+            <p>ผู้ช่วย AI สำหรับสร้างคอนเทนต์ คำตอบลูกค้า และแผนการตลาด</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="pricing" class="container section">
+        <div class="section-heading">
+          <p>Pricing</p>
+          <h2>แผนราคาเรียบง่าย พร้อมเติบโตไปกับทีมของคุณ</h2>
+        </div>
+        <div class="pricing">
+          <article class="price-card">
+            <h3>Starter</h3>
+            <p class="price">฿0</p>
+            <ul>
+              <li>1 Workspace</li>
+              <li>พื้นฐาน AI tools</li>
+              <li>Community Support</li>
+            </ul>
+            <button class="btn btn--ghost">เริ่มต้น</button>
+          </article>
+          <article class="price-card featured">
+            <span>Most Popular</span>
+            <h3>Growth</h3>
+            <p class="price">฿1,490</p>
+            <ul>
+              <li>Unlimited Projects</li>
+              <li>Advanced Automation</li>
+              <li>Priority Support</li>
+            </ul>
+            <button class="btn btn--primary">ทดลอง 14 วัน</button>
+          </article>
+          <article class="price-card">
+            <h3>Enterprise</h3>
+            <p class="price">Custom</p>
+            <ul>
+              <li>SSO + Security Suite</li>
+              <li>Dedicated Success Team</li>
+              <li>SLA 99.99%</li>
+            </ul>
+            <button class="btn btn--ghost">ติดต่อฝ่ายขาย</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="container section">
+        <div class="section-heading">
+          <p>FAQ</p>
+          <h2>พร้อมเริ่มเมื่อไหร่ ก็เปิดใช้งานได้ทันที</h2>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 MR7 Style Demo. Built for rapid deployment.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
